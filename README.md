@@ -22,6 +22,7 @@ Tables used so far: `orders` and `order_reviews`.
 - 53.8% of late orders received a 1-star review, compared with 6.6% of on-time orders.
 - The difference is statistically significant (Mann-Whitney U, p < 0.001) and the effect is large (rank-biserial r = -0.64).
 - Scores drop as delays grow: 3.29 for 1-3 days late, 2.10 for 4-7 days, and about 1.7 beyond a week. The drop flattens after a week, partly because scores cannot go below 1.
+- The gap is not explained by customer location alone: within each of the 12 states with at least 1,000 orders, late orders scored 1.6 to 2.3 points lower than on-time orders.
 
 ![Score distribution](images/score_distribution.png)
 ![Delay vs score](images/delay_vs_score.png)
@@ -31,7 +32,7 @@ Tables used so far: `orders` and `order_reviews`.
 - Reviews are voluntary, so customers who respond may not represent all customers.
 
 ## Next steps
-- Control for other factors (region, seller, product category).
+- Control for other factors (seller, product category).
 - Build a SQL analysis of the full relational dataset.
 
 ## Tools
